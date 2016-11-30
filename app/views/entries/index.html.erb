@@ -1,0 +1,10 @@
+<% provide(:title,"All Entry") %>
+<h1>All Entry</h1>
+
+<%= will_paginate %>
+
+<ul class="entries">
+   <%= render @entries %>	
+</ul>
+
+<%= will_paginate %>
