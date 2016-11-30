@@ -7,9 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create!(name:  "Tu Thi Hien",
-             email: "tuthihien@railstutorial.org",
-             password:              "foobar",
-             password_confirmation: "foobar",
+             email: "tuthihien@gmail.com",
+             password:              "123456",
+             password_confirmation: "123456",
              admin: true)
 
 99.times do |n|
