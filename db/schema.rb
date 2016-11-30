@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161003020020) do
+ActiveRecord::Schema.define(version: 20161130093651) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "content"
@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 20161003020020) do
     t.integer  "entry_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["entry_id", "created_at"], name: "index_comments_on_entry_id_and_created_at"
     t.index ["entry_id"], name: "index_comments_on_entry_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
@@ -46,10 +45,11 @@ ActiveRecord::Schema.define(version: 20161003020020) do
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
     t.string   "password_digest"
     t.string   "remember_digest"
+    t.boolean  "admin",           default: false
   end
 
 end
