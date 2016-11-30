@@ -15,7 +15,7 @@ $navbar-default-bg: black;
 }
 
 #logo:hover{
-	color:#fff;
+	color:#222;
 	text-decoration:none;
 
 }
@@ -25,19 +25,24 @@ $navbar-default-bg: black;
 }
 
 .jumbotron {
-	background-image:asset-url('new_cover_page.jpeg');
-	height: 550px;
+	background-image:asset-url('blog.jpg');
+  margin-bottom: 100px;
+  margin-top: 100px;
+	height: 400px;
 
 }
 .jumbotron h1{
-	color: #fff;
+	color: #222;
 	text-align:center;
 	font-weight:bold;
+ 
 }
 
 .btn-xlarge{
 	font-size: 1.7em;
 	background-color:black;
+  margin-bottom: 150px;
+  margin-top: 150px;
 }
 .footer{
 	maring-top:45px;
