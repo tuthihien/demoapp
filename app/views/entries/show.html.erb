@@ -10,7 +10,7 @@
      </section>
      <section>
         <% if logged_in? %>
-        <%= form_for(comment ||= current_user.comments.build) do |f| %>
+        <%= form_for( @comment ||= current_user.comments.build) do |f| %>
         <%= render 'shared/error_messages', object: f.object %>
         <div class="field">
           <%= f.text_area :content, placeholder: "Compose a comment..." %>
